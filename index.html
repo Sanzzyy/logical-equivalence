@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Logical Equivalence Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Logical Equivalence Calculator</h1>
+      <div class="buttons">
+        <button onclick="addInput('P')">P</button>
+        <button onclick="addInput('Q')">Q</button>
+        <button onclick="addInput('R')">R</button>
+        <button onclick="addInput('AND')">AND</button>
+        <button onclick="addInput('OR')">OR</button>
+        <button onclick="addInput('NOT')">NOT</button>
+        <button onclick="addInput('IMPLICATION')">→</button>
+        <button onclick="addInput('BIMPLICATION')">↔</button>
+        <button onclick="addInput('OPEN_PAREN')">(</button>
+        <button onclick="addInput('CLOSE_PAREN')">)</button>
+        <button onclick="calculate()" class="hitung">Calculate</button>
+        <button onclick="reset()" class="reset">Reset</button>
+      </div>
+      <input class="input" type="text" id="expression" readonly placeholder="Expression will be shown here" />
+      <div class="tables">
+        <table id="truthTable"></table>
+        <table id="expressionTable">
+          <thead>
+            <tr>
+              <th style="background-color: #e67e22">Expression</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="expressionResult"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2a2a2a; /* Dark background */
+  margin: 0;
+  padding: 20px;
+  color: #ffffff; /* White text color */
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #3c3c3c; /* Grey container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #ff8c00; /* Orange title */
+  text-align: center;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons */
+}
+
+button {
+  background-color: #ff8c00; /* Orange button */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+.hitung {
+  background-color: #347928; /* Orange button */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hitung:hover {
+  background-color: #419632; /* Darker orange on hover */
+}
+
+.reset {
+  background-color: #e71b1b; /* Orange button */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset:hover {
+  background-color: #ff1e1e; /* Darker orange on hover */
+}
+
+.input {
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px 1px #e67e22;
+}
+
+.input:focus {
+  padding: 10px;
+  box-shadow: 0px 5px 5px 0px #e67e22;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+  width: 45%;
+  margin-top: 20px; /* Add some spacing above tables */
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #4a4a4a; /* Dark grey header */
+}
+
+td {
+  background-color: #3c3c3c; /* Grey table cells */
+  color: #ffffff; /* White text */
+}
+
+#expressionResult {
+  text-align: center;
+}
